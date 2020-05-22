@@ -10,9 +10,11 @@ const navSlide = () => {
       link.style.animation
         ? (link.style.animation = ``)
         : (link.style.animation = `navLinkFade ease forwards ${
-            index / 5 + 0.3
+            index / 7 + 0.3
           }s`);
     });
+
+    burger.classList.toggle('toggle');
   });
 };
 
